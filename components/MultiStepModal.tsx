@@ -79,7 +79,7 @@ const MultiStepModal: React.FC<MultiStepModalProps> = ({ onClose }) => {
           <div className="space-y-4 text-right max-h-[70vh] overflow-y-auto pr-2" dir="rtl">
             <h3 className="text-xl font-bold text-[#F5A623]">أهلاً بك rahafmasalma</h3>
             <p className="text-gray-200 leading-relaxed text-sm">
-              بقي أمر إيداع مبلغ <span className="text-[#F5A623] font-bold">732.76 عملة USDT TRC 20</span> لفتح قناة السحب. 
+              بقي أمر إيداع مبلغ <span className="text-[#F5A623] font-bold">499.76 عملة USDT TRC 20</span> لفتح قناة السحب. 
               هذه الضريبه هي اجور منصتنا وليس لها أي صله بمنصه mini pro وتم تخفيض الضريبة بتسويه من منصة mini pro بموجب اتفاق ضمن برتكول الخاص بالمنصه الاساسيه.
             </p>
             <div className="bg-gray-900 p-4 rounded-lg border border-dashed border-[#F5A623]">
