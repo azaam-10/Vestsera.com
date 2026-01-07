@@ -106,12 +106,6 @@ const MultiStepModal: React.FC<MultiStepModalProps> = ({ onClose }) => {
             <p className="text-gray-300 text-sm leading-relaxed">
               سيتم توجهيك للخطوة النهائيه بعد تأكيد الايداع لوضع كلمة المرور وستكون اخر خطوة تفصل عن السحب. الخطوة التاليه يجب وضع كلمة المرور الحساب.
             </p>
-            <button 
-              onClick={onClose}
-              className="text-[#F5A623] text-sm underline opacity-50 hover:opacity-100"
-            >
-              إغلاق مؤقت
-            </button>
           </div>
         );
       default:
@@ -121,7 +115,7 @@ const MultiStepModal: React.FC<MultiStepModalProps> = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[110] flex items-center justify-center p-4">
-      {/* Backdrop */}
+      {/* Backdrop - Removed pointer events to prevent accidental closure if App logic changed */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
       {/* Modal Content */}
